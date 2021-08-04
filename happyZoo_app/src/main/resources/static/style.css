@@ -1,0 +1,203 @@
+ body {
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #164a44;
+  background-color: #b2d9d0;
+}
+
+table  {
+    border-collapse: collapse;
+}
+ 
+table td, th  {
+    padding: 5px;
+}
+
+.button_drag{
+	position: relative;
+}
+ 
+.create-button  {
+    color: blue;
+    cursor: pointer;
+    padding: 5px;
+}
+.edit-button  {
+    padding: 2px 5px;
+    background: #25A6E1;
+    cursor: pointer;
+}
+ 
+.delete-button  {
+    padding: 2px 5px;
+    background: #CD5C5C;
+    cursor: pointer;
+}
+
+.saveLayout-button{
+	padding: 10px 10px;
+    margin: 20px;
+    background: #48adcb;
+    cursor: pointer;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+._delete-button  {
+   padding: 4px 5px;
+    background: #CD5C5C;
+    cursor: pointer;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 1;
+    left: 146px;
+    top: 0px;
+}
+
+.button_v{
+	
+	position: absolute;
+    z-index: 1;
+    left: 146px;
+    top: 0;
+}
+
+#kind__true{
+	color: red;
+}
+
+#kind__false{
+	color: green;
+}
+
+
+.animal_list{
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+.list_item_animal{
+	 transition: background-color 0.5s;
+  margin-bottom: 10px;
+  padding: 5px;
+
+  text-align: center;
+  border: 2px dashed #b2d9d0;
+  border-radius: 10px;
+  cursor: move;
+  background-color: #dff2ef;
+
+  transition: background-color 0.5s;
+} 
+
+.list_item_animal:last-child {
+  margin-bottom: 0;
+}
+
+.voler{
+	height: 100px;
+	width: 400px;
+	border-width:1;
+    border-color: rgb(190,190,190);
+    border-style: solid;
+}
+
+ .thumbnail { height: 80px !important;
+ border: 2px solid #73a599; }
+      .btn-droppable { width: 180px; height: 30px; padding-left: 4px; }
+      .btn-draggable { width: 160px; }
+      
+ .container{
+ margin-left: 0;
+ display: flex;
+ flex-direction: column;
+ background-color: #b2d9d0;
+    flex-direction: column;
+    
+    max-height: 420px;
+    
+ }
+ 
+
+ 
+ .navbar-inner{
+ max-width: 0px;
+ padding: 0;
+ margin-left: 20px;
+ }
+ 
+ .myWrapperForVoler{
+display: flex;
+    height: 420px;
+    overflow: scroll;
+    margin-bottom: 40px;
+    max-width: 1100px;
+ }
+ 
+ .content-wrap{
+   flex-direction: row;
+    height: 420px;
+    margin-bottom: 30px;
+    width: 800px;
+ }
+ 
+.ng-modal-overlay {
+    /* полупорозрачный DIV, который охватывает весь экран */
+    position:absolute;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#000000;
+    opacity: 0.8;
+}
+.ng-modal-dialog {
+    /* Отцентрированный даилог с тенью */
+    z-index:10000;
+    position: absolute;
+    width: 50%;
+
+    /* Центрирование */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+    background-color: #b2d9d0;
+}
+.ng-modal-dialog-content {
+    padding:10px;
+    text-align: left;
+}
+.ng-modal-close {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'arial', 'sans-serif';
+}
